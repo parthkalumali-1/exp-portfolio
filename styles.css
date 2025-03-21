@@ -36,87 +36,57 @@ nav a:hover {
     color: #ff00ff;
 }
 
-/* Sections */
-section {
-    padding: 60px 0;
-    width: 80%;
-    margin: auto;
+/* Animated Buttons */
+.animated-button {
+    background-color: #00ffff;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
 }
 
-/* About & Experience Sections */
-#about, #experience {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: auto;
+.animated-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff00ff;
 }
 
-/* Embedded Card Style */
-.embed-card {
-    background-color: #1e1e1e;
-    border-left: 4px solid #00ffff;
-    padding: 15px;
-    margin: 20px auto;
-    width: 60%;
-    text-align: left;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.embed-card h2 {
-    color: #ff00ff;
-    font-size: 1.5rem;
+.contact-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
 }
 
-.embed-card p {
-    font-size: 1.1rem;
+.contact-icons img:hover {
+    transform: scale(1.2);
 }
 
-/* Bullet Point Fix */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Experience Section - Tech Icons */
+/* Tech Icons */
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
-}
-
-.tech-icons div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100px;
 }
 
 .tech-icons img {
-    width: 60px; /* Adjusted size */
-    height: 60px;
-    object-fit: contain;
-    transition: transform 0.3s ease-in-out;
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s;
 }
 
 .tech-icons img:hover {
     transform: scale(1.2);
-}
-
-.tech-icons p {
-    margin-top: 8px;
-    font-size: 1rem;
-    color: #00ffff;
-}
-
-/* Animation */
-@keyframes glow {
-    0% { text-shadow: 0 0 10px #ff00ff; }
-    50% { text-shadow: 0 0 20px #00ffff; }
 }
