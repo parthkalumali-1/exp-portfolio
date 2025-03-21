@@ -38,12 +38,12 @@ nav a:hover {
 
 /* Sections */
 section {
-    padding: 60px 0; /* Fixed spacing issue */
+    padding: 60px 0;
     width: 80%;
     margin: auto;
 }
 
-/* About Section */
+/* About & Experience Sections */
 #about, #experience {
     font-size: 1.2rem;
     max-width: 600px;
@@ -80,6 +80,39 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+/* Experience Section - Tech Icons */
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tech-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100px;
+}
+
+.tech-icons img {
+    width: 60px; /* Adjusted size */
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.2);
+}
+
+.tech-icons p {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #00ffff;
 }
 
 /* Animation */
