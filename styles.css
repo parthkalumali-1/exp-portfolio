@@ -38,52 +38,51 @@ nav a:hover {
 
 /* Sections */
 section {
-    padding: 60px 0; /* Fixed spacing issue */
+    padding: 50px 0;
     width: 80%;
     margin: auto;
 }
 
-/* About Section */
-#about, #experience {
-    font-size: 1.2rem;
-    max-width: 600px;
+/* Embed Card Style */
+.embed-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 500px;
     margin: auto;
 }
 
-/* Embedded Card Style */
-.embed-card {
-    background-color: #1e1e1e;
-    border-left: 4px solid #00ffff;
-    padding: 15px;
-    margin: 20px auto;
-    width: 60%;
-    text-align: left;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+/* Tech Icons */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.embed-card h2 {
+.tech-icons div {
+    text-align: center;
+    width: 90px;
+}
+
+.tech-icons img {
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
     color: #ff00ff;
-    font-size: 1.5rem;
-}
-
-.embed-card p {
-    font-size: 1.1rem;
-}
-
-/* Bullet Point Fix */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Animation */
-@keyframes glow {
-    0% { text-shadow: 0 0 10px #ff00ff; }
-    50% { text-shadow: 0 0 20px #00ffff; }
 }
