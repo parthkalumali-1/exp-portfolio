@@ -9,13 +9,17 @@ body {
 
 /* Glitch Effect for Header */
 @keyframes glitch {
-    0% { text-shadow: 4px 4px 0px #ff00ff, -4px -4px 0px #00ffff; }
-    50% { text-shadow: -4px -4px 0px #ff00ff, 4px 4px 0px #00ffff; }
-    100% { text-shadow: 4px 4px 0px #ff00ff, -4px -4px 0px #00ffff; }
+    0% { text-shadow: 4px 4px 0px #00ff00, -4px -4px 0px #00ffff; }
+    50% { text-shadow: -4px -4px 0px #00ff00, 4px 4px 0px #00ffff; }
+    100% { text-shadow: 4px 4px 0px #00ff00, -4px -4px 0px #00ffff; }
 }
+
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: 'Glitch', sans-serif;
     animation: glitch 0.8s infinite alternate;
+    color: #00ff00;
+    text-transform: uppercase;
 }
 
 /* Navigation Bar */
@@ -25,10 +29,11 @@ nav a {
     padding: 10px 15px;
     transition: 0.3s;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 nav a:hover {
-    color: #ff00ff;
-    text-shadow: 0 0 10px #ff00ff;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 /* Embedded Card Effect for Sections */
@@ -37,20 +42,22 @@ nav a:hover {
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea inset;
-    max-width: 600px;
+    box-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00 inset;
+    max-width: 700px;
     transition: transform 0.2s;
+    border: 2px solid #00ff00;
 }
 .embed-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff inset;
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #00ff00, 0 0 35px #00ff00 inset;
 }
 
 /* Section Titles */
 h2 {
     text-transform: uppercase;
-    font-size: 1.8rem;
-    text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #00ffea, 0 0 15px #00ffea;
+    color: #00ff00;
 }
 
 /* Links inside sections */
@@ -58,10 +65,11 @@ h2 {
     color: #00ffea;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 .embed-card a:hover {
-    color: #ff00ff;
-    text-shadow: 0 0 5px #ff00ff;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 /* Contact Section */
@@ -71,5 +79,6 @@ h2 {
     font-weight: bold;
 }
 #contact a:hover {
-    color: #ff00ff;
+    color: #00ff00;
+    text-shadow: 0 0 8px #00ff00;
 }
