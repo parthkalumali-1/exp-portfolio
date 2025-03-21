@@ -11,87 +11,23 @@ header {
     padding: 20px;
 }
 
-/* Glitch Effect for Name */
 .glitch {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: bold;
-    position: relative;
-    display: inline-block;
-    color: #fff;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: glitch 1.2s infinite alternate;
-}
-
-.glitch::before,
-.glitch::after {
-    content: "Parth Kalumali"; /* Your name */
-    position: absolute;
-    left: 0;
-    width: 100%;
-    opacity: 0.8;
-}
-
-.glitch::before {
-    color: #f00;
-    top: -2px;
-    left: -2px;
-    animation: glitch-1 0.8s infinite alternate;
-}
-
-.glitch::after {
-    color: #0ff;
-    top: 2px;
-    left: 2px;
-    animation: glitch-2 0.8s infinite alternate;
+    position: relative;
+    color: #fff;
+    animation: glitch 1s infinite;
 }
 
 @keyframes glitch {
-    0% {
-        transform: skew(0deg);
-    }
-    20% {
-        transform: skew(-5deg);
-    }
-    40% {
-        transform: skew(5deg);
-    }
-    60% {
-        transform: skew(-5deg);
-    }
-    80% {
-        transform: skew(5deg);
-    }
-    100% {
-        transform: skew(0deg);
-    }
+    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+    25% { text-shadow: -2px 2px #ff00ff, 2px -2px #00ffff; }
+    50% { text-shadow: 2px -2px #ff00ff, -2px 2px #00ffff; }
+    75% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ffff; }
+    100% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
 }
 
-@keyframes glitch-1 {
-    0% {
-        transform: translate(-2px, -2px);
-    }
-    50% {
-        transform: translate(2px, 2px);
-    }
-    100% {
-        transform: translate(-2px, -2px);
-    }
-}
-
-@keyframes glitch-2 {
-    0% {
-        transform: translate(2px, 2px);
-    }
-    50% {
-        transform: translate(-2px, -2px);
-    }
-    100% {
-        transform: translate(2px, 2px);
-    }
-}
-
-/* Buttons */
 .button {
     display: inline-block;
     background-color: #00ffff;
@@ -110,7 +46,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Tech Icons */
 .tech-icons img {
     width: 50px;
     margin: 10px;
@@ -121,7 +56,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Social Links */
 .social-links a img {
     width: 40px;
     margin: 10px;
@@ -130,4 +64,15 @@ header {
 
 .social-links a img:hover {
     transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
