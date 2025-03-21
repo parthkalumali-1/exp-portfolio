@@ -1,92 +1,50 @@
-/* General Styles */
 body {
-    font-family: 'Courier New', monospace;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
 header {
-    padding: 20px 0;
+    padding: 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 3px 3px 5px #ff00ff, -3px -3px 5px #00ffff;
-}
-
-/* Navigation */
-nav {
-    margin: 10px 0;
-}
-
-nav a {
-    color: #00ffff;
+.button {
+    display: inline-block;
+    background-color: #00ffff;
+    color: #000;
+    padding: 12px 24px;
+    margin: 10px;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 15px;
-    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ff00ff;
-}
-
-/* Animated Buttons */
-.animated-button {
-    background-color: #00ffff;
-    color: #121212;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px;
-}
-
-.animated-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #ff00ff;
-}
-
-/* Contact Icons */
-.contact-icons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contact-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
-}
-
-.contact-icons img:hover {
-    transform: scale(1.2);
-}
-
-/* Tech Icons */
-.tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.button:hover {
+    background-color: #00cccc;
+    transform: scale(1.05);
 }
 
 .tech-icons img {
-    width: 60px;
-    height: auto;
+    width: 50px;
+    margin: 10px;
     transition: transform 0.3s;
 }
 
 .tech-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-links a img {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a img:hover {
     transform: scale(1.2);
 }
